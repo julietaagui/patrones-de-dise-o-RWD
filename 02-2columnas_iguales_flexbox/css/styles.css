@@ -38,4 +38,17 @@ h1 {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: flex;
+        /*permite alinear elementos de izquierda a derecha*/
+        justify-content: space-between; /*coloca un espacio a la derecha y otro a la izquierda dejando el centro libre*/
+    
+    }
+
+    .entrada-blog {
+        flex-basis: calc(50% - 1rem) ;
+    }
+}

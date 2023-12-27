@@ -38,4 +38,20 @@ h1 {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+
+
+/* CODIGO AQUI */
+
+@media (min-width: 768px) {
+    .tres-columnas {
+        display: flex;
+        justify-content: space-between;
+        /* otra opcion (tiene menos soportes en los navegadores de iphone y ipad) es
+        gap: 2rem ;*/
+    }
+    .entrada-blog {
+        /*se divide el 100% de las imagenes y el - 1rem es para la separacion*/
+        flex: 0 0 calc(33.3% - 1rem); /*el primer 0 es el factor de crecimiento y el segundo el factor mas pequeño */
+    }
+}
