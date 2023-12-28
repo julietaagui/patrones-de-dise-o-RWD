@@ -48,4 +48,30 @@ p {
 }
 
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: flex;
+        /* este se usa para cuando se use calc() 
+        justify-content: space-between;*/
+        gap: 2rem;
+    }
+    /*
+    aside {
+        flex: 1;
+    }
+
+    article {
+        flex: 3;
+    } */
+    /*otra manera de hacer lo mismo mas
+    parecida a la vista anteriormente es:*/
+
+    aside {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    article {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+}
