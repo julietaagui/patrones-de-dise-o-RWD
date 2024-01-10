@@ -49,4 +49,15 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+
+h1 {
+    text-align: center;
+    font: 3rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 6rem ;
+    }
+}

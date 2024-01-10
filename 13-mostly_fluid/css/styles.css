@@ -36,4 +36,26 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+/* CODIGO AQUI */
+.contenedor {
+    max-width: 120rem; /*se va a agrandar maximo ese valor*/
+   width: 95%; /*se usa el prcentaje para que fluya*/
+   /*cero arriba y auto a los lados, se usa para centrar*/
+   margin: 0 auto; 
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        max-width: 100%;
+    } 
+}
